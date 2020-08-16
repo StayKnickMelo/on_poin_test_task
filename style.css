@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#slider,
+.wrap,
+.slide-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background: #ccc;
+  position: relative;
+}
+
+.slide1 {
+  background: #333;
+}
+.slide2 {
+  background: rgb(196, 145, 145);
+}
+.slide3 {
+  background: rgb(107, 48, 48);
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.slide4 {
+  background: green;
+}
+
+#track {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  z-index: 9;
+}
+
+.dot {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.fullwidth {
+  width: 100vw;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  color: #fff;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-down {
+  border-width: 30px 40px 0px 40px;
+  border-color: #fff transparent transparent transparent;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+#arrow-up {
+  border-width: 0px 40px 30px 40px;
+  border-color: transparent transparent #fff transparent;
+  top: 0;
+  margin-top: 30px;
+}
+
+#slide-container {
+  position: fixed;
+  bottom: 40px;
+  width: 60%;
+  justify-content: center;
+  bottom: 20%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#slidebar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  outline: none;
+  border-radius: 3px;
+}
+
+
+#slidebar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 48px;
+  height: 48px;
+  background-color: #0f9d58;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+#selector {
+  height: 104px;
+  width: 48px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+
+.hidden {
+  display: none;
+}

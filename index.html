@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="slider">
+        <div id="track">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="slide slide1">
+          <div class="slide-content">
+            <span>Slide One</span>
+          </div>
+          <div class="arrow" id="arrow-down"></div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <span>Slide Two</span>
+          </div>
+          <div class="arrow" id="arrow-up"></div>
+          <div class="arrow" id="arrow-down"></div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content fullwidth">
+            <span>Slide Three</span>
+            <div class="arrow" id="arrow-up"></div>
+
+            <div id="slide-container">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                name=""
+                id="slidebar"
+              />
+
+              <div class="info">
+                <span>Slide 3</span>
+                <span>Slide 4</span>
+                <span>Slide 5</span>
+              </div>
+    
+            </div>
+          </div>
+
+          <div style="background: green;" class="slide-content fullwidth">
+            <span>Slide Four</span>
+          </div>
+          <div style="background: blue;" class="slide-content fullwidth">
+            <span>Slide Five</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
